@@ -32,12 +32,20 @@ console.log(myFunction(34, 67));
   }
 }
 
-{/** 
+{
+  /** 
 //Store a function inside variable.
 const greet = function () {
   console.log("Hello to js function!");
 };
 greet();
-*/}
+*/
+}
 
+let num = prompt("Enter the first number");
+let num1 = prompt("Enter the 2nd number");
 
+function add(x, y) {
+  console.log((sum = x + y));
+}
+add(Number(num), Number(num1));

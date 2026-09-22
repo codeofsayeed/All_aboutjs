@@ -2,9 +2,9 @@
   "name": "all_aboutjs",
   "version": "1.0.0",
   "description": "",
-  "main": "callback_function.js",
+  "main": "math.js",
   "scripts": {
-    "start": "node callback_function.js"
+    "start": "node math.js"
   },
   "keywords": [],
   "author": "",
