@@ -1,7 +1,7 @@
 const mySym = Symbol("mykeys");
 let object = {
   Name: "Sayeed",
-  BSC: "running",
+  BSC: "Pursuing",
   Duration: 4,
   [mySym]: "keys",
 };
