@@ -58,3 +58,27 @@ const result1 = x.concat(y, z);
 console.log(result1);
 
 //Destructuring Array:
+// Defining a "user" object
+const user = {
+  name: "Alice",
+  age: 30,
+  isAdmin: true,
+
+  // A property can also be a function, which is called a method
+  greet: function () {
+    console.log("Hello, my name is " + this.name);
+  },
+};
+
+// 1. Accessing properties
+console.log(user.name); // Output: Alice (using dot notation)
+console.log(user["age"]); // Output: 30    (using bracket notation)
+
+// 2. Modifying an existing property
+user.age = 31;
+
+// 3. Adding a new property dynamically
+user.country = "Canada";
+
+// 4. Calling the object's method
+user.greet(); // Output: Hello, my name is Alice
