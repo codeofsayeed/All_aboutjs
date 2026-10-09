@@ -44,7 +44,9 @@ console.log(arrays); // showing full arrays after shifting(deleting) the 1st arr
 
 */
 }
-//Concatening Arrays with each other.
+{
+  /* 
+  //Concatening Arrays with each other.
 const num1 = [1, 2, 3, 4, 5];
 const num2 = [100, 300, 500];
 const result = num1.concat(num2); // concate two arrays together.
@@ -56,29 +58,66 @@ const y = ["RAM", "Keyboard", "Mouse"];
 const z = ["Price", "Warranty"];
 const result1 = x.concat(y, z);
 console.log(result1);
+  
+  */
+}
 
-//Destructuring Array:
-// Defining a "user" object
-const user = {
-  name: "Alice",
-  age: 30,
-  isAdmin: true,
+//Def of Array: An array is a special type of object that stores multiple values in a single variable. It is indexed, meaning each element has a unique index number associated with it. Arrays are used to store and manage collections of data.
+//Or, An ordered collection of values is called an array. Each value is called an element, and each element has a numeric position known as its index. The first element has an index of 0, the second has an index of 1, and so on.
+//Creating Arrays:
+//Accessing & Modifying Array Elements:
+//Adding & removing Elements from an Array:
+//Iteration over an Array:
+//Transformation methods for Arrays:
+//Searching & Filtering Arrays:
+//Sorting & Reversing Arrays:
+//Converting Arrays:
+//Destructuring , Spreads , and REST in Arrays:(Discusiing in function.js file & more to explore in this file. )
+//Copying: Shallow copy and Deep copy of an array:
+//Array Methods:
+//Mutator methods: These methods modify the original array. Examples include push(), pop(), shift(), unshift(), splice(), sort(), reverse().
+//Non-mutator methods: These methods do not modify the original array but return a new array or value. Examples include concat(), slice(), map(), filter(), reduce().
+//Array Properties:**
+//Creating an array using array literal syntax:**
 
-  // A property can also be a function, which is called a method
-  greet: function () {
-    console.log("Hello, my name is " + this.name);
-  },
+//Def of Object: An object is a collection of properties, where each property is defined as a key-value pair. Objects are used to represent real-world entities and their attributes. In JavaScript, objects can be created using object literal syntax , constructor functions , or classes.
+//Creating Objects:
+const mobileBrand = {
+  brandName: "Samsung",
+  model: "Galaxy S21",
+  warranty: "1 year",
+  price: 799.99,
+  isAvailable: true,
+  fetures: ["5G", "AMOLED Display", "3 Camra"],
 };
+console.log(mobileBrand.price);
+console.log(mobileBrand.fetures[1]);
 
-// 1. Accessing properties
-console.log(user.name); // Output: Alice (using dot notation)
-console.log(user["age"]); // Output: 30    (using bracket notation)
-
-// 2. Modifying an existing property
-user.age = 31;
-
-// 3. Adding a new property dynamically
-user.country = "Canada";
-
-// 4. Calling the object's method
-user.greet(); // Output: Hello, my name is Alice
+//Accessing & Modifying Object Properties:
+//Adding,Removing & Updating Properties from an Object:
+//Short-hand Property Names in Objects:
+//Computed Property Names in Objects:
+//Shorthand & Computed Property Names in Objects:
+//Iterating over Object:
+//Destructuring ,spreads and REST:
+//Object Methods:
+//this keyword in Objects:
+//Methods & this keyword in Objects:
+//Getters & Setters in Objects:
+//Property Descriptors in Objects:
+//Controlling mutability of Objects:
+//Object Prototypes in Objects:
+//Object inheritance in Objects:
+//Object Prototype & inheritance in Objects:
+//Object copying(shallow vs deep) in Objects:
+//Object cloning in Objects:**
+//Classes in depth:
+//Useful built-in Object methods in JavaScript:
+//Symbol as keys:
+//Making Objects iterable:
+//Object Prototype chain in Objects:**
+//Map vs Object:
+//WeakMap vs Map:
+//Set vs Array:
+//WeakSet vs Set:
+//
