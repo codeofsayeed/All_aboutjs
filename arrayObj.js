@@ -111,6 +111,28 @@ console.log(mobileBrand.fetures[1]);
 //Object Prototype & inheritance in Objects:
 //Object copying(shallow vs deep) in Objects:
 //Object cloning in Objects:**
+const student = {
+  name: "Sayeed",
+  age: 23,
+  department: "CSE",
+};
+
+const clonedStudent = { ...student };
+
+console.log(student);
+console.log(clonedStudent);
+
+const student1 = {          //Another example of cloning an object using spread operator.
+  name: "Sayeed",
+  age: 23,
+};
+
+const clonedStudent1 = { ...student1 };
+
+clonedStudent1.name = "Rahim";
+
+console.log(student1.name);
+console.log(clonedStudent1.name);
 //Classes in depth:
 //Useful built-in Object methods in JavaScript:
 //Symbol as keys:
