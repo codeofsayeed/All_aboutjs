@@ -87,12 +87,23 @@ const mobileBrand = {
   model: "Galaxy S21",
   warranty: "1 year",
   price: 799.99,
-  isAvailable: true,
-  fetures: ["5G", "AMOLED Display", "3 Camra"],
+  isAvailable: false,
+  features: ["5G", "AMOLED Display", "3 Camra"],
 };
 console.log(mobileBrand.price);
-console.log(mobileBrand.fetures[1]);
-
+console.log(mobileBrand.features[0]);
+console.log(mobileBrand.features[2]);
+console.log(mobileBrand.features[1]);
+console.log(mobileBrand["warranty"]); //Accessing object properties using bracket notation.
+console.log(`The ${mobileBrand.brandName} ${mobileBrand.model} is now ${mobileBrand.isAvailable ? "available" : "not available"} for ${mobileBrand.price} USD
+with${mobileBrand.features.join(" , ")} features included.`);
+console.log(`And it has ${mobileBrand.warranty} warranty.`);
+//Object.freeze(mobileBrand); //Freezing the object to prevent any modifications to its properties.
+mobileBrand.model = "Galaxy S25 Ultra"; //Modifying the value of a property in an object.
+console.log(mobileBrand.model);
+console.log("features" in mobileBrand); //Checking if a property exists in an object using the 'in' operator.
+console.log(Object.hasOwn(mobileBrand, "warranty")); //Checking if a property exists in an object using the Object.hasOwn() method.It's a more modern(ES2022-standard) and preferred way to check for property existence in objects.
+console.log(Object.hasOwn(mobileBrand, "model"));
 //Accessing & Modifying Object Properties:
 //Adding,Removing & Updating Properties from an Object:
 //Short-hand Property Names in Objects:
@@ -122,7 +133,8 @@ const clonedStudent = { ...student };
 console.log(student);
 console.log(clonedStudent);
 
-const student1 = {          //Another example of cloning an object using spread operator.
+const student1 = {
+  //Another example of cloning an object using spread operator.
   name: "Sayeed",
   age: 23,
 };
