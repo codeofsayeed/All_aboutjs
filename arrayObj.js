@@ -82,7 +82,9 @@ console.log(result1);
 
 //Def of Object: An object is a collection of properties, where each property is defined as a key-value pair. Objects are used to represent real-world entities and their attributes. In JavaScript, objects can be created using object literal syntax , constructor functions , or classes.
 //Creating Objects:
-const mobileBrand = {
+{
+  /**
+  const mobileBrand = {
   brandName: "Samsung",
   model: "Galaxy S21",
   warranty: "1 year",
@@ -90,25 +92,65 @@ const mobileBrand = {
   isAvailable: false,
   features: ["5G", "AMOLED Display", "3 Camra"],
 };
-console.log(mobileBrand.price);
-console.log(mobileBrand.features[0]);
+
+console.log(mobileBrand.price);  //Accessing object properties using dot notation.
+console.log(mobileBrand.features[0]); //Accessing object properties using dot notation and array index.
 console.log(mobileBrand.features[2]);
 console.log(mobileBrand.features[1]);
 console.log(mobileBrand["warranty"]); //Accessing object properties using bracket notation.
 console.log(`The ${mobileBrand.brandName} ${mobileBrand.model} is now ${mobileBrand.isAvailable ? "available" : "not available"} for ${mobileBrand.price} USD
-with${mobileBrand.features.join(" , ")} features included.`);
+with${mobileBrand.features.join(" , ")} features included.`); //Using template literals to create a string that includes object properties and array elements.
 console.log(`And it has ${mobileBrand.warranty} warranty.`);
 //Object.freeze(mobileBrand); //Freezing the object to prevent any modifications to its properties.
 mobileBrand.model = "Galaxy S25 Ultra"; //Modifying the value of a property in an object.
 console.log(mobileBrand.model);
 console.log("features" in mobileBrand); //Checking if a property exists in an object using the 'in' operator.
+console.log("variant" in mobileBrand); //Checking for a non-existing property in the object using 'in' operator.
 console.log(Object.hasOwn(mobileBrand, "warranty")); //Checking if a property exists in an object using the Object.hasOwn() method.It's a more modern(ES2022-standard) and preferred way to check for property existence in objects.
 console.log(Object.hasOwn(mobileBrand, "model"));
+console.log(Object.hasOwn(mobileBrand, "color")); //Checking for a non-existing property in the object.
+  */
+}
 //Accessing & Modifying Object Properties:
 //Adding,Removing & Updating Properties from an Object:
+{
+  /**
+  const superHero = {
+  name: "Spiderman",
+  age: 25,
+  powers: ["Wall-Crawling", "Web-Slinging", "Superhuman Strength"],
+  isAlive: true,
+};
+console.log(superHero);
+superHero.city = "New York"; //Adding****** a new property to the object.
+console.log(superHero.name); //Accessing an object property using dot notation.
+console.log(superHero.powers[1]); //Accessing an array element within an object property using dot notation & array index.
+superHero.age = 26; //Updating an existing property value in the object.
+console.log(superHero.age);
+delete superHero.isAlive; //Removing a property from the object.
+console.log(superHero);
+  */
+}
 //Short-hand Property Names in Objects:
+const Name = "Sayeed";
+const age = 23;
+const department = "CSE";
+const skill = "MERN Stack Developer";
+const skills=['HTML','CSS','JavaScript','React','Nodejs','MongoDB']
+const Student = {
+  Name,
+  age,
+  department,
+  skill,
+  skills
+};
+console.log(Student);
+console.log(Student.age);
+console.log(Student.department)
+console.log(Student.skills[4]); //Accessing an array element within an object property using dot notation & array index.
 //Computed Property Names in Objects:
 //Shorthand & Computed Property Names in Objects:
+
 //Iterating over Object:
 //Destructuring ,spreads and REST:
 //Object Methods:
