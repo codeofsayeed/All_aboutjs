@@ -132,22 +132,36 @@ console.log(superHero);
   */
 }
 //Short-hand Property Names in Objects:
-const Name = "Sayeed";
+{/**
+  const Name = "Sayeed";
 const age = 23;
 const department = "CSE";
 const skill = "MERN Stack Developer";
-const skills=['HTML','CSS','JavaScript','React','Nodejs','MongoDB']
+const skills = ["HTML", "CSS", "JavaScript", "React", "Nodejs", "MongoDB"];
 const Student = {
   Name,
   age,
   department,
   skill,
-  skills
+  skills,
 };
 console.log(Student);
 console.log(Student.age);
-console.log(Student.department)
+console.log(Student.department);
 console.log(Student.skills[4]); //Accessing an array element within an object property using dot notation & array index.
+
+const userName = "coder_99";
+const Age = 23;
+const isAdmin = true;
+const email = "alice@example.com";
+
+const userProfile = {
+  userName , Age ,isAdmin , email
+};
+console.log(userProfile)
+*/}
+
+
 //Computed Property Names in Objects:
 //Shorthand & Computed Property Names in Objects:
 
@@ -196,4 +210,3 @@ console.log(clonedStudent1.name);
 //WeakMap vs Map:
 //Set vs Array:
 //WeakSet vs Set:
-//
