@@ -132,7 +132,8 @@ console.log(superHero);
   */
 }
 //Short-hand Property Names in Objects:
-{/**
+{
+  /**
   const Name = "Sayeed";
 const age = 23;
 const department = "CSE";
@@ -159,14 +160,61 @@ const userProfile = {
   userName , Age ,isAdmin , email
 };
 console.log(userProfile)
-*/}
-
+*/
+}
 
 //Computed Property Names in Objects:
-//Shorthand & Computed Property Names in Objects:
+
+{
+  /**
+  const property = "email"; //Using variables as property names.
+const user = {
+  name: "Nazmul Hasan",
+  [property]: "nazhas@example.com",
+};
+console.log(user);
+
+const field = "score"; //Use a variable to create a property dynamically after receiving some data.
+const value = 95;
+const result = {
+  [field]: value,
+};
+console.log(result);
+
+const x = 30; //Using expressions & calculations
+const y = 50;
+const id = 21;
+const data = {
+  ["result_" + (x + y)]: x * y, //Expression inside square brackets can perform can calculations.
+  [`product_${id}`]: "Laptop", //Using template literals (easier way).
+};
+console.log(data);
+  */
+}
 
 //Iterating over Object:
-//Destructuring ,spreads and REST:
+//Def:Iterating over an object means going through its properties(keys & values) one by one so that one can read, process, modify, or display data.
+
+{
+  /*
+  const studentInfo = {
+  name: "Mr.Rahim",
+  age: 21,
+  grade: "A",
+};
+for (const key in studentInfo) {
+  //Using for...in(when anyone want to print every property-name without writing student.name,student.age,student.grade separately according to below example.)
+  console.log(key);
+  console.log(key, studentInfo[key]);
+}
+const keys = Object.keys(studentInfo); //Object.keys() returns an array containing an object's own enumerable string-keyed property names.Use this, when want see only property-name.
+console.log(Object.keys(studentInfo)); //U can see the length of it by using .length .
+console.log(Object.values(studentInfo)) //When u want to see only the values, not property.
+console.log(Object.entries(studentInfo)) //Returns an array of key-value pairs.
+  */
+}
+//spreads/REST:
+//Destructuring, :
 //Object Methods:
 //this keyword in Objects:
 //Methods & this keyword in Objects:
