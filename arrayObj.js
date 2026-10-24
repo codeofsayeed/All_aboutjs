@@ -214,10 +214,34 @@ console.log(Object.entries(studentInfo)) //Returns an array of key-value pairs.
   */
 }
 //spread VS REST:
-//REST:REST collects the remaining own enumerable properties into a new object. It only appears on the left side, inside a destructuring pattern & must b last.
+//REST:REST collects the remaining own enumerable remaining properties into a new object during destructuring. It only appears on the left side, inside a destructuring pattern & must b last.
+//The main thing is: REST parameter(operator) should be used in the last item in pattern.
 const user = { id: 1, name: "Ana", age: 25, city: "Dhaka" };
+const { age, ...rest } = user;
+console.log(age, rest); //testing with two parameters
 
-//Destructuring, :
+const student_ = { name: "Emon", age: 22, department: "CSE", city: "Dhaka" };
+{
+  /**
+  const { department, ...rests } = student_; //testing with two parameter
+console.log(department);
+console.log(department, rests);
+   */
+}
+const { name, city, ...rests } = student_; // for testing more than two parameters
+console.log(name, city, rests);
+
+const { a, ...baki } = { a: 1, x: 4, y: 6 }; //Uses in variable declarations.
+console.log(a, baki);
+
+//Mainly this part is the context of function.js
+function show({ title, ...meta }) {
+  console.log(title, meta);
+  // console.log(author, meta);// It works,only when u add the author parameter in function parameter.e.g:function show({ title,author, ...meta }).
+}
+show({ title: "post", author: "Ana", views: 100 });
+
+//Destructuring(It is covered in previous lecture(REST vs Spread) :
 //Object Methods:
 //this keyword in Objects:
 //Methods & this keyword in Objects:
