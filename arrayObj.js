@@ -213,7 +213,10 @@ console.log(Object.values(studentInfo)) //When u want to see only the values, no
 console.log(Object.entries(studentInfo)) //Returns an array of key-value pairs.
   */
 }
-//spreads/REST:
+//spread VS REST:
+//REST:REST collects the remaining own enumerable properties into a new object. It only appears on the left side, inside a destructuring pattern & must b last.
+const user = { id: 1, name: "Ana", age: 25, city: "Dhaka" };
+
 //Destructuring, :
 //Object Methods:
 //this keyword in Objects:
