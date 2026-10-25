@@ -219,20 +219,48 @@ console.log(Object.entries(studentInfo)) //Returns an array of key-value pairs.
 const user = { id: 1, name: "Ana", age: 25, city: "Dhaka" };
 const { age, ...rest } = user;
 console.log(age, rest); //testing with two parameters
+{
+  /**
+  //Merging two Objects:
+const defaults = { theme: "light", lang: "en" };
+const custom = { lang: "bn", debug: true };
 
-const student_ = { name: "Emon", age: 22, department: "CSE", city: "Dhaka" };
+const settings = { ...defaults, ...custom };
+console.log(settings);
+//Merging two Objects:
+  */
+}
+{
+  /**
+  //Shallow cloning:Order matters
+const p = { x: 1, y: 3 };
+const q = { y: 34, z: 57 };
+
+console.log({ ...p, ...q });
+console.log({ ...q, ...p });
+//Shallow cloning:Order matters
+  */
+}
+
+
+
+
+{
+  /**
+  const student_ = { name: "Emon", age: 22, department: "CSE", city: "Dhaka" };
 {
   /**
   const { department, ...rests } = student_; //testing with two parameter
 console.log(department);
 console.log(department, rests);
-   */
-}
+   
 const { name, city, ...rests } = student_; // for testing more than two parameters
 console.log(name, city, rests);
 
 const { a, ...baki } = { a: 1, x: 4, y: 6 }; //Uses in variable declarations.
 console.log(a, baki);
+  */
+}
 
 //Mainly this part is the context of function.js
 function show({ title, ...meta }) {
@@ -240,6 +268,25 @@ function show({ title, ...meta }) {
   // console.log(author, meta);// It works,only when u add the author parameter in function parameter.e.g:function show({ title,author, ...meta }).
 }
 show({ title: "post", author: "Ana", views: 100 });
+
+const product = {
+  title: "Laptop",
+  price: 50000,
+  brand: "HP",
+  stock: 14,
+};
+const { title, ...others } = product; //Extract 1 property & collect the rest.
+console.log(title, others);
+
+const employee = {
+  id: 101,
+  name: "Shahalam Bakaul",
+  salary: 40000,
+  department: "Sales",
+  city: "Chittagong",
+};
+const { salary, department, ...bakis } = employee; //Extract multiple properties, then collect rest of the item from object.
+console.log(salary, department, bakis);
 
 //Destructuring(It is covered in previous lecture(REST vs Spread) :
 //Object Methods:
