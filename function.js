@@ -54,11 +54,6 @@ function myjob(){
 myjob();
 
 
-myjob2();          //This ia a function declaration, It can happen only in hoisting. It can be called before the function is declared.
-function myjob2(){
-  console.log("Pursuing a degree in  CSE")
-}
-
 
 //Function Expression:
 const sayeed= function(){
