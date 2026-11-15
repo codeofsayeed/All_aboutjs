@@ -27,7 +27,7 @@ console.log(divide(332, 4)); // 83
 const subtract = (m, n) => {
   return m - n;
 };
-console.log(subtract(30 - 23)); // 7
+console.log(subtract(30, 23)); // 7
 
 //Function hoisting: In JavaScript, function declarations are hoisted to the top of their containing scope, allowing you to call a function before it is defined in the code.
 // This means that you can invoke a function before its actual declaration, and it will still work as expected. However, function expressions are not hoisted in the same way, so they must be defined before they are called.
@@ -42,3 +42,4 @@ function myjob2() {
 //Variable hoisting: In JavaScript, variable declarations (using var) are hoisted to the top of their containing scope, but their assignments are not. This means that you can reference
 //a variable before it is declared, but its value will be undefined until the assignment is reached in the code. However, with let and const, variables are hoisted but not initialized,
 //leading to a "temporal dead zone" where accessing them before declaration results in a ReferenceError.
+
